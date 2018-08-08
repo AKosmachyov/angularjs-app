@@ -21,4 +21,4 @@ npm start
 
 ### Preview
 
-
+<img src="./screenshots/home-m.png" width="400px"> <img src="./screenshots/basket-m.png" width="400px">
