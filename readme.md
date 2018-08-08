@@ -1,7 +1,5 @@
 # AngularJS App
 
-### libraries
-
 ### Quick start
 
 ```bash
