@@ -1,0 +1,9 @@
+<header class="navbar border-bottom">
+    <a ui-sref="home" ui-sref-active="active">Test App</a>
+    <a class="btn btn-outline-primary" role="button" ui-sref="basket" ui-sref-active="active">
+        Basket <span class="badge">{{$ctrl.basketCount || ''}}</span>
+    </a>
+</header>
+<div class="container-fluid">
+    <div ui-view></div>
+</div>

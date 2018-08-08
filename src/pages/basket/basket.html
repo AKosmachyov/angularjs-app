@@ -1,0 +1,10 @@
+<div class="total-container mt-2 mb-2" ng-if="$ctrl.total">
+    <b>Total price: ${{$ctrl.total}}</b>
+</div>
+<div class="card-deck align-items-center justify-content-center">
+    <product ng-repeat="product in $ctrl.products"
+             is-basket="true"
+             on-remove="$ctrl.remove(product)"
+             on-count-update="$ctrl.onProductChangeCount(product)"
+             product="product"></product>
+</div>

@@ -1,0 +1,30 @@
+<div class="card card-size card-shadow mt-2 mb-2">
+    <img class="card-img-top" ng-src="{{$ctrl.product.imgUrl}}">
+
+    <div class="card-body">
+        <h5 class="card-title">{{$ctrl.product.title}}</h5>
+        <p class="card-text">{{$ctrl.product.description}}</p>
+        <p class="card-text text-right">{{$ctrl.product.prePriceText}}{{$ctrl.product.price}} {{$ctrl.product.afterPriceText}}</p>
+
+
+        <div class="btn-toolbar justify-content-end">
+            <div class="btn-group mr-3">
+                <product-count rate-of-change-qty="$ctrl.product.rateOfChangeQty"
+                               min="$ctrl.product.minQty"
+                               count="$ctrl.product.count"
+                               on-count-update="$ctrl.changeCount()"></product-count>
+            </div>
+            <div class="btn-group">
+                <button type="button"
+                        class="btn btn-outline-primary"
+                        ng-click="$ctrl.add()"
+                        ng-if="!$ctrl.isBasket">Add</button>
+
+                <button type="button"
+                        class="btn btn-outline-danger"
+                        ng-click="$ctrl.remove()"
+                        ng-if="$ctrl.isBasket">Remove</button>
+            </div>
+        </div>
+    </div>
+</div>

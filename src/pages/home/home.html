@@ -1,0 +1,6 @@
+<div class="card-deck align-items-center justify-content-center">
+    <product ng-repeat="product in $ctrl.products"
+             on-add="$ctrl.addToBasket(product)"
+             product="product"
+             class="mt-2"></product>
+</div>
